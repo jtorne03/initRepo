@@ -20,3 +20,13 @@ Use the `bluetoothctl` terminal to connect to paired devices:
 ```
 bluetoothctl;
 ```
+
+## GIT 
+
+For the formatting of branches, we need to `source /path/to/git-prompt.sh` and add the following the `PS1='<...>'` field, within the quotes:
+
+```
+'\[\033[38;2;255;165;0m\]$(__git_ps1 " (%s)") \[\033[00m\]\n\$'
+```
+
+This will format the git branch in the PS1, with the color orange.
